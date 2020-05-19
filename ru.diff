@@ -1,0 +1,25 @@
+diff --git a/ru.bak b/ru
+index dc5a1f7..bbf62a3 100644
+--- a/ru.bak
++++ b/ru
+@@ -11,7 +11,7 @@ xkb_symbols "winkeys" {
+     include "ru(common)"
+     name[Group1]= "Russian";
+ 
+-    key <AE03> { [           3,  numerosign  ] };
++//    key <AE03> { [           3,  numerosign  ] };
+     key <AE04> { [           4,   semicolon  ] };
+     key <AE05> { [           5,     percent  ] };
+     key <AE06> { [           6,       colon  ] };
+@@ -20,6 +20,11 @@ xkb_symbols "winkeys" {
+ 
+     key <AB10> { [      period,       comma  ] };
+     key <BKSL> { [   backslash,       slash  ] };
++
++    key <AD03> { [ space, space ] };
++    key <SPCE> { [ Cyrillic_u, Cyrillic_U ] };
++    key <AE03> { [ Cyrillic_tse, Cyrillic_TSE ] };
++    key <AD02> { [ 3, numerosign ] };
+ };
+ 
+ hidden partial alphanumeric_keys
